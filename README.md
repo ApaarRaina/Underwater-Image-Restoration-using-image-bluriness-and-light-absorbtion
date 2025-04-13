@@ -4,6 +4,9 @@ I have done the implementation in python
 I took inspiration from the MatLab implementation done by Jerry Peng
 Both the github of Jerry Peng and the IEEE paper link are given below
 
+
+To run use the dip_proj.py file
+
 IEEE paper link   
 https://ieeexplore.ieee.org/document/7840002
 
