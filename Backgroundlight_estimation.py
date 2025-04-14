@@ -5,7 +5,7 @@ e_s=math.pow(2.0,-10)
 e_n=0.1
 
 def S(v,a):
-  return 1/(1+np.exp(-32*(a-v)))
+  return 1/(1+np.exp(-32*(v-a)))
 
 def get_top_pixels(P_blr):
   thresh=np.percentile(P_blr,99.9)
