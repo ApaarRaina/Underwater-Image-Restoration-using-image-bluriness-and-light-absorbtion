@@ -17,6 +17,6 @@ def d_o(BL, I):
         max_diffs.append(np.max(np.abs(I[:,:,c] - BL[c])))
     k = np.argmax(max_diffs)
     B_k = max_diffs[k]
-    d0 = 1 - (B_k / max(BL[k], 1 - BL[k]))
+    d0 = (B_k / max(BL[k], 1 - BL[k]))
     return d0
 
