@@ -109,7 +109,7 @@ red_tensor=red_tensor.unsqueeze(0).unsqueeze(0)
 R=pool(red_tensor)
 R=R.squeeze(0).squeeze(0).numpy()
 
-map_1=1-F_s(R)
+map_1=F_s(R)
 
 map_2=F_s(depth_mip(red,green,blue))
 
@@ -125,8 +125,7 @@ map = xip.guidedFilter(guide=img_normalised, src=map, radius=radius, eps=lambda_
 
 d0=d_o(BL,img_normalised)
 
-d_f=8*(map+d0)
-d_f = np.clip(d_f, 0.1, 8)  # Avoid exploding exp
+d_f=8*(1-(map)+(1-d0))
 beta_r=1/7
 m=-0.00113
 i=1.62517
@@ -153,7 +152,7 @@ for i in range(3):
 
 J = np.clip(J, 0, 1)
 
-plt.figure(figsize=(10,10))
+plt.figure(figsize=(8,8))
 plt.subplot(1,2,1)
 plt.imshow((J * 255).astype(np.uint8))
 plt.title('Restored Image')
