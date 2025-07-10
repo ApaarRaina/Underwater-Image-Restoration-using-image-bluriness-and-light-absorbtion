@@ -1,15 +1,35 @@
-This is my version of implementation regarding the IEEE paper Underwater Image Restoration using Image Bluriness and Light Absorption
-I have done the implementation in python
+# Underwater Image Restoration using Image Blurriness and Light Absorption (IBLA)
 
-I took inspiration from the MatLab implementation done by Jerry Peng
-Both the github of Jerry Peng and the IEEE paper link are given below
+This repository contains a **Python implementation** of the method described in the IEEE paper:
+
+**"Underwater Image Restoration Based on Image Blurriness and Light Absorption"**  
+by Yan-Tsung Peng, Pamela C. Cosman.  
+IEEE Transactions on Image Processing, 2017.  
+[Paper Link (IEEE Xplore)](https://ieeexplore.ieee.org/document/7840002)
+
+---
+
+## Overview
+
+Underwater images often suffer from degradation due to scattering and light absorption. This implementation is based on the IBLA (Image Blurriness and Light Absorption) method, which improves visibility and contrast in underwater images using:
+
+- **Local image blurriness maps**  
+- **Light attenuation priors**  
+- **Quad-tree-based adaptive background light estimation**  
+- **Depth map estimation**  
+- **Transmission map refinement**
+
+This project is a full reimplementation of the IBLA method in Python, inspired by the original MATLAB code by Jerry Peng.
+
+---
+## How to Run
+
+1. **Clone the repository**
+
+```bash
+git clone [https://github.com/yourusername/Underwater-Image-Restoration-using-image-bluriness-and-light-absorbtion.git]
+cd underwater-image-restoration
+python dip_proj.py
 
 
-To run use the dip_proj.py file
-
-IEEE paper link   
-https://ieeexplore.ieee.org/document/7840002
-
-MatLab github Link
-https://github.com/ytpeng-aimlab/Underwater-Image-Restoration-based-on-Image-Blurriness-and-Light-Absorption/blob/main/README.md
 
