@@ -10,7 +10,7 @@ from depth_estimation import F_s,depth_mip,depth_estimation
 from TM_estimation import d_o,_k
 import math
 
-img=cv.imread('Ancuti2_input.jpg')
+img=cv.imread('images/Ancuti2_input.jpg')
 img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 
 print(img.shape)

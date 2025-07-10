@@ -37,7 +37,7 @@ python dip_proj.py
 Below are the restored images(left) by the algorithm 
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="Enhanced Image-2.png" alt="Generated MNIST Digits" width="300"/>
-  <img src="Enhanced Image-1.png" alt="Generated MNIST Digits" width="300"/>
+  <img src="results/Enhanced Image-2.png" alt="Generated MNIST Digits" width="300"/>
+  <img src="results/Enhanced Image-1.png" alt="Generated MNIST Digits" width="300"/>
 </div>
 
