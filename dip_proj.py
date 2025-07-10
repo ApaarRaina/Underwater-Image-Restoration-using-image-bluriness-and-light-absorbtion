@@ -153,6 +153,7 @@ for i in range(3):
 J = np.clip(J, 0, 1)
 
 plt.figure(figsize=(8,8))
+
 plt.subplot(1,2,1)
 plt.imshow((J * 255).astype(np.uint8))
 plt.title('Restored Image')
