@@ -10,7 +10,7 @@ from depth_estimation import F_s,depth_mip,depth_estimation
 from TM_estimation import d_o,_k
 import math
 
-img=cv.imread('galdran1_input.jpg')
+img=cv.imread('Ancuti2_input.jpg')
 img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 
 print(img.shape)
@@ -40,7 +40,7 @@ P_blr,C_r=blur_estimate(I_g,img_normalised)
 #background light estimate
 
 e_s=math.pow(2.0,-10)
-e_n=0.1
+e_n=0.2
 
 #apply mask to get the first candidate
 mask=get_top_pixels(P_blr)

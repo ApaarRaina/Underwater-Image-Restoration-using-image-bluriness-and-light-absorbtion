@@ -2,7 +2,7 @@ import math
 import numpy as np
 
 e_s=math.pow(2.0,-10)
-e_n=0.1
+e_n=0.2
 
 def S(v,a):
   return 1/(1+np.exp(-32*(v-a)))
